@@ -23,16 +23,24 @@
 
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <ul id="nav-mobile" class="right">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right">
         <li><a href="https://ca.linkedin.com/in/john-martin-179885a4" id="section1Btn" class="btn-floating btn-large waves-effect waves-light red"><img src="images/linkedin-logo.png" style="margin-top:11.75px; margin-left:1px;"></img></a></li>
         <li><a href="https://www.facebook.com/jmartin95" id="section2Btn" class="btn-floating btn-large waves-effect waves-light blue"><img src="images/facebook-logo.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
         <li><a href="https://github.com/johnjmartin"  id="section3Btn" class="btn-floating btn-large waves-effect waves-light purple"><img src="images/github-sign.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
       </ul>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-         <li><a style="color:black;" href="/">Home</a></li>
-         <li><a style="color:black;" href="about/">About Me</a></li>
-         <li><a style="color:black;" href="/projects">Projects</a></li>
+         <li class="active"><a style="color:black;" href="/">Home</a></li>
+         <li><a style="color:black;" href="/about">About Me</a></li>
+         <li><a style="color:black;" href="/portfolio">Portfolio</a></li>
        </ul>
+      <ul class="side-nav" id="mobile-demo">
+       <li class="active"><a style="color:black;" href="/">Home</a></li>
+         <li><a style="color:black;" href="/about">About Me</a></li>
+         <li><a style="color:black;" href="/portfolio">Portfolio</a></li>
+      </ul>
+    </div>
   </nav>
 
   <div class="container">
@@ -43,7 +51,7 @@
         <br><br>
         <h3 class="header center orange-text">Hi, I'm John.</h3>
         <div class="row center">
-          <h5 class="header col s12 light">Welcome to my site. Please take a look around!</h5>
+          <h6 class="header col s12 light">I'm a 4th year Computer Science student; I'm interested in DevOps and Full Stack Development</h6>
         </div>
         <br><br>
       </div>
@@ -55,7 +63,7 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <!-- <script src="js/init.js"></script> -->
+  <script src="js/init.js"></script>
 
   </body>
 </html>

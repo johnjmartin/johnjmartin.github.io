@@ -2,47 +2,115 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>About</title>
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82428407-1', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-82428407-1', 'auto');
+      ga('send', 'pageview');
 
-</script>
+    </script>
 </head>
-
 <body>
-  <header>
-    <nav class="light-blue lighten-1" role="navigation">
+   <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right">
-          <li><a href="https://ca.linkedin.com/in/john-martin-179885a4" id="section1Btn" class="btn-floating btn-large waves-effect waves-light red"><img src="images/linkedin-logo.png" style="margin-top:11.75px; margin-left:1px;"></img></a></li>
-          <li><a href="https://www.facebook.com/jmartin95" id="section2Btn" class="btn-floating btn-large waves-effect waves-light blue"><img src="images/facebook-logo.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
-          <li><a href="https://github.com/johnjmartin"  id="section3Btn" class="btn-floating btn-large waves-effect waves-light purple"><img src="images/github-sign.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
-        </ul>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-           <li><a style="color:black;" href="/">Home</a></li>
-           <li><a style="color:black;" href="about/">About Me</a></li>
-           <li><a style="color:black;" href="/projects">Projects</a></li>
-         </ul>
-    </nav>
-  </header>
+        <li><a href="https://ca.linkedin.com/in/john-martin-179885a4" id="section1Btn" class="btn-floating btn-large waves-effect waves-light red"><img src="images/linkedin-logo.png" style="margin-top:11.75px; margin-left:1px;"></img></a></li>
+        <li><a href="https://www.facebook.com/jmartin95" id="section2Btn" class="btn-floating btn-large waves-effect waves-light blue"><img src="images/facebook-logo.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
+        <li><a href="https://github.com/johnjmartin"  id="section3Btn" class="btn-floating btn-large waves-effect waves-light purple"><img src="images/github-sign.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
+      </ul>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <li><a style="color:black;" href="/">Home</a></li>
+         <li class="active"><a style="color:black;" href="/about">About Me</a></li>
+         <li><a style="color:black;" href="/portfolio">Portfolio</a></li>
+       </ul>
+      <ul class="side-nav" id="mobile-demo">
+       <li><a style="color:black;" href="/">Home</a></li>
+       <li class="active"><a style="color:black;" href="/about">About Me</a></li>
+       <li><a style="color:black;" href="/portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <!-- <h2 class="row center text-lighten-2">About Me</h2> -->
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>About Me (professional)</h4>
+          <p class="left-align dark">Education</p>
+          <p class="left-align light">I am a fourth year Computer Science student at Queen’s University in Kingston, Ontario.<br><br> My degree program is Biomedical Computing — meaning that I am pursuing a Computer Science degree with additional courses in chemistry, biology, genomics, genetics and other areas related to the biomedical field.</p>
+          <p class="left-align dark">Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>About Me (personal)</h4>
+          <p class="left-align light">I love exploring software, learning new languages, and building useful applications.</p>
+          <p class="left-align light">I built this site as a place to try out new frameworks, and organise new projects.</p>
+          <p class="left-align light">In my spare time you can find me playing rugby, hiking, or attempting to master functional programming.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
 
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
   </body>
 </html>

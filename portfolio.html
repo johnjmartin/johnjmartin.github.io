@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Projects</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82428407-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="https://ca.linkedin.com/in/john-martin-179885a4" id="section1Btn" class="btn-floating btn-large waves-effect waves-light red"><img src="images/linkedin-logo.png" style="margin-top:11.75px; margin-left:1px;"></img></a></li>
+          <li><a href="https://www.facebook.com/jmartin95" id="section2Btn" class="btn-floating btn-large waves-effect waves-light blue"><img src="images/facebook-logo.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
+          <li><a href="https://github.com/johnjmartin"  id="section3Btn" class="btn-floating btn-large waves-effect waves-light purple"><img src="images/github-sign.png" style="margin-top:11.75px;margin-left:1px;"></img></a></li>
+        </ul>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+           <li><a style="color:black;" href="/">Home</a></li>
+           <li><a style="color:black;" href="/about">About JOHN</a></li>
+           <li class="active"><a style="color:black;" href="/portfolio">Portfolio</a></li>
+         </ul>
+        <ul class="side-nav" id="mobile-demo">
+         <li><a style="color:black;" href="/">Home</a></li>
+         <li><a style="color:black;" href="/about">About Me</a></li>
+         <li class="active"><a style="color:black;" href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12">
+          <a href="/blog">
+          <div class="card-panel hoverable">
+              <h5>My Blog</h5>
+              <p></p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+     <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/blog.png">
+            <span class="card-title">Blog</span>
+          </div>
+          <!-- <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div> -->
+          <div class="card-action">
+           <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/redux.png">
+            <span class="card-title">Reduxstagram</span>
+          </div>
+          <!-- <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div> -->
+          <div class="card-action">
+           <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Blog</h4>
+        <p>A blog written in using HarpJS, blog posts are written and formatted using Markup</p>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Reduxtagram</h4>
+        <p>Instagram single page viewer, built using React Redux</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    </body>
+</html>

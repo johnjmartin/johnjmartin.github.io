@@ -1,3 +1,5 @@
+// Adapted from: https://bl.ocks.org/mbostock/3231307
+
 var width = window.innerWidth,
     height = window.innerHeight;
 
@@ -8,7 +10,7 @@ root.radius = 0;
 root.fixed = true;
 
 var force = d3.layout.force()
-    .gravity(0.05)
+    .gravity(0.03)
     .charge(function(d, i) { return i ? 0 : -2000; })
     .nodes(nodes)
     .size([width, height]);
@@ -30,7 +32,7 @@ force.on("tick", function(e) {
   for (i = 1; i < n; ++i) q.visit(collide(nodes[i]));
 
   context.clearRect(0, 0, width, height);
-  context.fillStyle = "steelblue";
+  context.fillStyle = "black";
   context.beginPath();
   for (i = 1; i < n; ++i) {
     d = nodes[i];
@@ -40,11 +42,16 @@ force.on("tick", function(e) {
   context.fill();
 });
 
+
 canvas.on("mousemove", function() {
   var p1 = d3.mouse(this);
   root.px = p1[0];
   root.py = p1[1];
   force.resume();
+  context.fillStyle = "black";
+});
+canvas.on("mouseover", function() {
+  canvas.syle("fill", "steelblue");
 });
 
 function collide(node) {
