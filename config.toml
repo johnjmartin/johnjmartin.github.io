@@ -1,0 +1,5 @@
+baseURL = "http://johnjmartin.github.io"
+languageCode = "en-us"
+title = "Working"
+disqus = "blog-shortname"
+theme = "crisp"

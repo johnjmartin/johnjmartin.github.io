@@ -1,0 +1,6 @@
+[submodule "hugo-theme-crisp"]
+	path = hugo-theme-crisp
+	url = https://github.com/Zenithar/hugo-theme-crisp.git
+[submodule "themes/crisp"]
+	path = themes/crisp
+	url = https://github.com/Zenithar/hugo-theme-crisp.git
