@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on johnjmartin</title>
+    <link>https://johnjmartin.github.io/posts/</link>
+    <description>Recent content in Posts on johnjmartin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>johnjosephmartin@icloud.com (John Martin)</managingEditor>
+    <webMaster>johnjosephmartin@icloud.com (John Martin)</webMaster>
+    <lastBuildDate>Thu, 14 Jun 2018 10:24:40 -0400</lastBuildDate>
+    
+	<atom:link href="https://johnjmartin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Year as a Developer</title>
+      <link>https://johnjmartin.github.io/posts/first-year-as-a-developer/</link>
+      <pubDate>Thu, 14 Jun 2018 10:24:40 -0400</pubDate>
+      <author>johnjosephmartin@icloud.com (John Martin)</author>
+      <guid>https://johnjmartin.github.io/posts/first-year-as-a-developer/</guid>
+      <description> Finding out what Software Developers do </description>
+    </item>
+    
+  </channel>
+</rss>
