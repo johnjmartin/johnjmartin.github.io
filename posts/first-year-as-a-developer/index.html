@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.42.1" />
     
-    <title>First Year as a Developer &middot; johnjmartin</title>
-    <meta content="First Year as a Developer - johnjmartin" property="og:title">
+    <title>What I&#39;ve learned in my first year as a Software Engineer &middot; johnjmartin</title>
+    <meta content="What I&#39;ve learned in my first year as a Software Engineer - johnjmartin" property="og:title">
     <meta content=" - What I&#39;ve learned since entering the workforce" property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://johnjmartin.github.io/css/hyde.css">
     <!-- Font-Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    
+    <!-- highlight.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <!-- Customised CSS -->
     <link rel="stylesheet" href="https://johnjmartin.github.io/css/custom.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,14 +35,14 @@
     
 
 	</head>
-    <body class=" ">
+    <body class="theme-base-0d ">
         <div class="sidebar">
   <div class="container text-center ">
     <div class="sidebar-about text-center">
       <a href="https://johnjmartin.github.io/"><h1 class="brand">johnjmartin</h1></a>
-      
+       <img src="/headshot.jpg" alt="Author Image" class="img-circle headshot center"> 
       <p class="lead">
-         Your site's description 
+         something about small things 
       </p>
     </div>
     
@@ -49,6 +50,12 @@
 	<ul class="sidebar-nav">
 		
 		
+				<li>
+					<a href="/about/"><i class='fa fa-user'></i> <span>About</span></a>
+				</li>
+				<li>
+					<a href="/posts/"><i class='fa fa-bookmark'></i> <span>Posts</span></a>
+				</li>
 		</li>
 	</ul>
 </div>
@@ -58,19 +65,27 @@
 	
 	
 	
+	&nbsp;<a href="https://github.com/johnjmartin"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	&nbsp;<a href="https://instagram.com/john.j.martin"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+	
+	
+	&nbsp;<a href="https://linkedin.com/in/john-j-martin-"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
 	
 	
 	
 	
 	
 	
-	
-	
+	&nbsp;<a href="mailto:johnjosephmartin@icloud.com"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
 	
 </section>
 
     </p>
-    <p class="copyright">&copy; 2018 .
+    <p class="copyright">&copy; 2018 johnjmartin.
       <a href="https://creativecommons.org/licenses/by/4.0">Some Rights Reserved</a>.<br/>Built with <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
     </p>
   </div>
@@ -80,7 +95,7 @@
 
         <div class="content container">
             <div class="post">
-  <h1>First Year as a Developer</h1>
+  <h1>What I&#39;ve learned in my first year as a Software Engineer</h1>
   
   <div class="col-sm-12 col-md-12">
     <span class="text-left post-date meta">
@@ -94,9 +109,6 @@
             in
             
             
-                <a class="meta" href="/categories/golang">GOLANG</a>
-                ,
-            
                 <a class="meta" href="/categories/programming">PROGRAMMING</a>
                 
             
@@ -109,24 +121,97 @@
             <br/>
              <i class="fas fa-tags"></i>
             
-            <a class="meta" href="/tags/hugo">hugo</a> 
+            <a class="meta" href="/tags/development">development</a> 
         
-            <a class="meta" href="/tags/theme">theme</a>
+            <a class="meta" href="/tags/software">software</a>
         
       
       
       <br/>
-      <i class="fas fa-clock"></i> 1 min read 
+      <i class="fas fa-clock"></i> 3 min read 
       </span>  
   </div>    
   
   
 
-<h1 id="finding-out-what-software-developers-do">Finding out what Software Developers do</h1>
+<p>These are some anecdotes I thought worth sharing, they were jotted down
+throughout my first year as a software engineer <a href="https://shopify.com">@Shopify</a>.</p>
+
+<h2 id="take-things-slow">Take things slow</h2>
+
+<p>Pull requests are there for a reason, when you start on a feature, don&rsquo;t let
+yourself stray from the initial goal you started when you got to work that
+morning.</p>
+
+<p>I was forced to learn to this out of necessity; it was hard enough to get
+single line changes merged with the standard of quality enforced by my team,
+if I was going to get any work accomplished I realized I would have to greatly
+reduce the scope of my pull requests.</p>
+
+<!-- As an example, imagine you create a branch named: `update-cli` because you've
+noticed a bug in your app's cli which was improperly parsing `-v`, verbose
+flags. After fixing the bug in your cli, you notice the debug logs could be
+improved, it's related to the verbose logging so should be fine. At this point
+the logs are looking great but since you changed all those logs  -->
+
+<h2 id="the-documentation-isn-t-wrong-you-re-wrong">The documentation isn&rsquo;t wrong; you&rsquo;re wrong</h2>
+
+<p>Mainly this heading makes me laugh because of how true I&rsquo;ve seen it to be.
+Do your due diligence before making large claims about how the documentation
+to a codebase written by developers much more experienced than you is incorrect.
+More often than not you&rsquo;re misinterpreting something and should take another few
+minutes to be sure of your conclusions.</p>
+
+<p>If you encounter a problem which you think is serious enough to raise to a more
+senior developer for advice, have a clear map in your mind about the issue
+you&rsquo;re about to explain.</p>
+
+<h2 id="work-takes-twice-as-long-to-do-right">Work takes twice as long to do right</h2>
+
+<p>My background before joining  was a CS degree and two prior internships,
+none of which - at no fault of their own - taught me to
+practice test driven development. I initially estimated tasks based off just
+the time I thought it would take to implement, but when factoring in sufficient
+testing (there is a strict 80% <a href="codecov.io">code coverage</a> requirement on most
+repositories), and the code review process, the actual implementation is usually
+about half the time spent.</p>
+
+<h2 id="be-clear-and-communicative-about-the-work-you-re-doing">Be clear and communicative about the work you&rsquo;re doing</h2>
+
+<p>If you&rsquo;re working with people don&rsquo;t underestimate the importance of detail.
+Detailed feature descriptions, detailed updates to tasks you&rsquo;ve started but had
+to abandon, and most importantly, detail when describing technical issues.</p>
+
+<p>While dealing with a request to set up a database proxy between two different
+cloud providers, progress was held up by consistent connection timeouts on
+long-lived queries. After numerous changes to network settings on both ends of
+the proxy about half of connections started succeeding. In an effort to spin a
+positive narrative, I stated things were &ldquo;starting to work&rdquo;, rather than being
+forthright. After hours more investigation it was noticed that one of the
+endpoints had more than one A Record (the connection was going to more than one
+server). Had it been communicated earlier that half the requests were failing
+we probably would have realized earlier that we needed to be configuring two
+servers, not just the one.</p>
+
+<h2 id="it-gets-faster">It gets faster</h2>
+
+<p>Programming takes time. I learned how to program four years ago and one thing I
+can say with absolute confidence is that you&rsquo;ll never stop learning.
+The context that comes from experience means you can spend way less time playing
+with a one line command that “might be the problem&rdquo; in your code and use your
+experience to quickly solve problems and pick up new styles of development.</p>
+
+<p>I owe a ton to Shopify and especially my team members for taking a chance in
+mentoring me, for that I say thanks.</p>
 
 </div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
 
     
 
@@ -134,5 +219,16 @@
         </div>
         
         
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-82428407-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
     </body>
 </html>

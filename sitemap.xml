@@ -13,13 +13,7 @@
   </url>
   
   <url>
-    <loc>https://johnjmartin.github.io/categories/golang/</loc>
-    <lastmod>2018-06-14T10:24:40-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://johnjmartin.github.io/tags/hugo/</loc>
+    <loc>https://johnjmartin.github.io/tags/development/</loc>
     <lastmod>2018-06-14T10:24:40-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -37,13 +31,13 @@
   </url>
   
   <url>
-    <loc>https://johnjmartin.github.io/tags/</loc>
+    <loc>https://johnjmartin.github.io/tags/software/</loc>
     <lastmod>2018-06-14T10:24:40-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://johnjmartin.github.io/tags/theme/</loc>
+    <loc>https://johnjmartin.github.io/tags/</loc>
     <lastmod>2018-06-14T10:24:40-04:00</lastmod>
     <priority>0</priority>
   </url>
